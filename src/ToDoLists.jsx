@@ -27,8 +27,9 @@ function ToDoLists(props) {
                       checked={props.isTicked(value)}
                     ></input>
                     <img
-                      src="./delete.png"
+                      src={require("./delete.png")}
                       className="delete"
+                      alt="delete"
                       onClick={() => {
                         props.deleteItems(index, value);
                       }}
